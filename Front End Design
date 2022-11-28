@@ -1,0 +1,15 @@
+Front End:
+o Open NetBeans IDE
+o In the design view of NetBeans, design the form with the
+appropriate labels, fields and buttons.
+Back End Connections:
+o Right click on the project -> click on properties -> In the
+project properties dialog box -> choose libraries option in
+the categories pane ->click on add library button -> From
+the add library dialog box choose the MYSQL JDBC Driver -
+> click on create button.
+o Load the JDBC driver class by using Class.forName.
+o Create connection to back end by giving the URL, username
+and password.
+o Create the statement object.
+o Execute the statement
