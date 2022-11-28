@@ -1,0 +1,19 @@
+Software Requirements:
+o IDE : NetBeans 8.0.2
+o Database : MySql 5.2
+o Operating System : Any Platform
+Hardware Requirements:
+o RAM : 1 GB
+o Hard Disk : 20 GB
+o Processor : From Inter Pentium-3
+Modules
+We have 3 major Modules:
+1. Register Module:
+This module allows the users to register themselves by
+giving their personal details so as to obtain more information
+about this website.
+2. Login Module:
+This module allows the users to log in with their credentials.
+3.Payment Module:
+This module allows the users to select their mode of
+payments and make payment using credit/debit card.
