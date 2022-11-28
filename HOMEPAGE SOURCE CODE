@@ -1,0 +1,14 @@
+Code for Login:
+login l =new login();
+l.setVisible(true);
+this.dispose();
+
+Code for Sign up:
+signup s =new signup();
+s.setVisible(true);
+this.dispose();
+
+Code for About us:
+aboutus a =new aboutus();
+a.setVisible(true);
+this.dispose();
