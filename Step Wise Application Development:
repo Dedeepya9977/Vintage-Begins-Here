@@ -1,0 +1,118 @@
+1. Problem Identification
+2. Database Design & Front end Design
+3. Front End and Back End Connections
+4. Source Code Development
+5. Testing
+6. Executing
+
+
+
+Step 1:- The problem is identified. It’s economic and technical
+feasibility are discussed. It is found that the application
+development and implementation are technically and
+economically feasible.
+Step 2:- Create a database in MySql with the name ‘VBH’. By
+using that database create tables with the names
+signup,cart,debit_card,credit_card.
+The following is the data about the tables and the description of
+the tables.
+mysql> use vbh;
+Database changed
+mysql> show tables;
++--------------------------+
+| Tables_in_vbh |
++--------------------------+
+| cart |
+| credit_card |
+| debit_card |
+| signup l
++--------------------------+
+4 rows in set (0.00 sec)
+mysql> desc cart;
++----------+-------------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| itemname | varchar(30) | YES | | NULL | |
+| price | mediumtext | YES | | NULL | |
++----------+-------------+------+-----+---------+-------+
+2 rows in set (0.01 sec)
+mysql> desc signup;
++-----------+-------------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| firstname | varchar(30) | YES | | NULL | |
+| lastname | varchar(30) | YES | | NULL | |
+| username | varchar(15) | YES | | NULL | |
+| password | varchar(10) | YES | | NULL | |
+| email | varchar(30) | YES | | NULL | |
+| phoneno | mediumtext | YES | | NULL | |
++-----------+-------------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+mysql> desc login;
++----------+-------------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| username | varchar(20) | YES | | NULL | |
+| password | varchar(15) | YES | | NULL | |
++----------+-------------+------+-----+---------+-------+
+2 rows in set (0.05 sec)
+mysql> desc credit_card;
++--------+------------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++--------+------------+------+-----+---------+-------+
+| total | mediumtext | YES | | NULL | |
+| cardno | mediumtext | YES | | NULL | |
+| cvv | int(5) | YES | | NULL | |
++--------+------------+------+-----+---------+-------+
+3 rows in set (0.02 sec)
+mysql> desc debit_card;
++--------+------------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++--------+------------+------+-----+---------+-------+
+| total | mediumtext | YES | | NULL | |
+| cardno | mediumtext | YES | | NULL | |
+| cvv | int(5) | YES | | NULL | |
++--------+------------+------+-----+---------+-------+
+3 rows in set (0.01 sec)
+mysql> select * from signup;
++-----------+----------+----------+----------+--------------------
+---+------------+
+| firstname | lastname | username | password | email
+| phoneno |
++-----------+----------+----------+----------+--------------------
+---+------------+
+| rani | bathula | rb123 | 12345 |
+ranibathula@gmail.com | 9595262678 |
++-----------+----------+----------+----------+--------------------
+---+------------+
+1 row in set (0.00 sec)
+mysql> select * from login;
++----------+----------+
+| username | password |
++----------+----------+
+| rb123 | 12345 |
++----------+----------+
+1 row in set (0.00 sec)
+mysql> select * from cart;
++-------------------------+-------+
+| itemname | price |
++-------------------------+-------+
+| SAPPHIRE RING | 1299 |
+| SILVER BLACK METAL RING | 1249 |
+| MERGENTINA BRACELET | 1999 |
++-------------------------+-------+
+3 rows in set (0.00 sec)
+mysql> select * from credit_card;
++---------+-----------+------+
+| balance | cardno | cvv |
++---------+-----------+------+
+| 42781 | 987654321 | 123 |
++---------+-----------+------+
+1 row in set (0.00 sec)
+mysql> select * from debit_card;
++---------+-----------+------+
+| balance | cardno | cvv |
++---------+-----------+------+
+| 42781 | 987654321 | 123 |
++---------+-----------+------+
+1 row in set (0.00 sec)
