@@ -1,0 +1,16 @@
+
+
+1) When user clicks ‘Sign up’ button he will be able to create
+   an account in the online accessories shop.
+2) When user clicks ‘login’ he will be able to access his account
+   by entering correct username and password combination.
+3)  When user clicks ‘Add to Cart’ all the items that he has
+   selected for purchasing will be added to cart along with price and
+    subtotal.
+4) When user clicks ‘Go to Cart’ he will be directed to his cart
+   which will display all the items selected along with price, subtotal
+   and total.
+5)  When user clicks ‘Pay Now’ he will be directed to payment
+   page where he can select his mode of pay.
+6)  When user clicks ‘Debit’/’Credit’ he will be directed to the
+  pages with respective modes of payment.
